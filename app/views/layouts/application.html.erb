@@ -13,7 +13,7 @@
 <body style="display: block;">
   <%= render('layouts/navigation') %>
 
-
+<%= render 'shared/flash' if !flash.empty? %>
 <%= yield %>
 
 <%= render('layouts/footer') %>

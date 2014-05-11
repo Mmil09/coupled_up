@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'c635990e28cd0c9c1cdbafb4651d20127420b1c51fb15232c0b45300d1d6119cc12f94e0231e4f16d6673b3dedeaf3b538ca1cf4aa4d0dbe034983b0daf06894'
+  # config.secret_key = '6302af558d32fb225bf71fd0c884f8e3b8570f010b75e3cbc1bcbf3cec3493afd91c074cf96b955b9039a447b4cdab8c2bbc0cc6a59cfec94ef15313fad52310'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -29,7 +29,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [ :email ]
+  config.authentication_keys = [ :email, :username ]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -41,7 +41,7 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  config.case_insensitive_keys = [ :email ]
+  config.case_insensitive_keys = [ :email, :username ]
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '900805ac06d8459705454ffcd1c7029c065801f1a252fef98101315f0e33461b69098dc740b3dafc47b2a54c8538b38f1bceada159bb7873afdb35f00e20b052'
+  # config.pepper = '78754fd3d8ffc86794333732314f1fad950a9df521c29f12ae488f110d8daaa97e4fa74a38648eb5eee1cdc2cf07357b3e5302347e23505d38c24750261d38ca'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without

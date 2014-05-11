@@ -37,6 +37,8 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'cancan'
 gem 'font-awesome-rails'
+gem 'birthday'
+gem 'bootstrap_form'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
